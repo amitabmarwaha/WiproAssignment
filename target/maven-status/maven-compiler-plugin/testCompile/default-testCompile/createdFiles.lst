@@ -1,0 +1,8 @@
+stepDefinitions\ValidateMegaMenu.class
+stepDefinitions\NewUserRegistration.class
+pageObjects\HomePage.class
+pageObjects\SummerDresses.class
+pageObjects\CreateAccount.class
+utilities\DriverObjects.class
+TestRunner.class
+utilities\Hooks.class
