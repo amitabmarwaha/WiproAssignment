@@ -1,0 +1,10 @@
+Below is a brief description of the Framework components - 
+
+- TestRunner.java : This file contains the Cucumber Options and is executed by maven which further invokes execution of feature files and scenarios
+- utilities : This contains two classes :
+	- DriverObjects which holds the declaration of WebDriver and is inherited by stepDefinition classes so that a 	  single copy of Webdriver is used throughout the program
+	- Hooks : This contains Before and After hooks which will be executed before and after every scenario. The Before 	  hook initializes the driver instance according to the browser name that is passed as a maven parameter. The After 	  checks if scenario is failed then it takes a screenshot and embeds it in the scenario result and then destroys 	  the webdriver instance 
+- stepDefinitions : This package contains the actual methods that implement the Cucumber scenarios
+- pageObjects : This contains the xpath locators of elements page wise and functions to operate on them
+- features : This contains the feature files that have the Cucumber scenarios to be executed
+- target : The html reports of execution result is saved under html-reports un target folder
