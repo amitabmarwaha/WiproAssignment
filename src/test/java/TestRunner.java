@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/main/resources/features",
         glue = {"stepDefinitions", "utilities", "pageObjects"},
-        format = {"html:target/html-reports","json:target/cucumber.json"},
+        format = {"pretty","html:target/html-reports","json:target/cucumber.json"},
         tags = "@browser"
 )
 public class TestRunner {
